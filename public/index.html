@@ -4,32 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Image Resizer</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin: 50px;
-    }
-    input[type="file"], input[type="number"] {
-      margin: 10px;
-      padding: 5px;
-    }
-    img {
-      margin-top: 20px;
-      max-width: 100%;
-      max-height: 400px;
-    }
-    button {
-      padding: 10px 20px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #45a049;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
 </head>
 <body>
   <h1>Image Resizer</h1>
@@ -76,9 +51,4 @@
         })
         .catch(error => {
           console.error('Error:', error);
-          alert('There was an error resizing the image. Please try again.');
-        });
-    });
-  </script>
-</body>
-</html>
+          alert('There was an error resizing the image. Please t
